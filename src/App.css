@@ -1,0 +1,253 @@
+.App {
+  text-align: center;
+}
+
+.App-button {
+  background-color: #a1a1a1;
+  border: 0;
+  border-radius: 1em;
+  color: white;
+  font-size: inherit;
+}
+
+.App-icon {
+  width: 2em;
+  padding: 0.2em;
+}
+
+.App-small-icon {
+  width: 1em;
+  padding: 0.1em;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: calc(10px + 2vmin);
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.App-link {
+  text-decoration: none;
+  margin-right: 1em;
+  color: black;
+}
+
+.App-link:hover {
+  color: #F5DEB3;
+}
+
+.App-row {
+  display: flex;
+  align-items: center;
+}
+
+.App-home-background {
+  width: 100%;
+  border-bottom-left-radius: 30%;
+}
+
+.App-home-text {
+  font-size: calc(10px + 3.5vmin);
+  font-weight: bold;
+  position: absolute;
+  top: 4em; 
+  right: 1em;
+}
+
+.App-home-description {
+  font-size: calc(10px + 1.5vmin);
+  position: absolute;
+  top: 10em; 
+  right: 2em;
+  width: 50%;
+  text-align: right;
+}
+
+.App-about-block {
+  text-align: left;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.App-about-photo {
+  width: 90%;
+  object-fit: cover;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+#App-about, .App-review-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.App-review-container {
+  font-size: small;
+  text-align: left;
+  grid-column-gap: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.App-review {
+  padding: 1em;
+  border-radius: 2em;
+  background-color: white;
+}
+
+.App-portrait {
+  padding: 0.3em;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  float: left;
+}
+
+.App-projects-description {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.App-project {
+  text-align: left;
+}
+
+.App-interior-photo {
+  object-fit: cover;
+  border-top-right-radius: 30%;
+  width: 100%;
+  height: 25em;
+}
+
+.App-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #a1a1a1;
+  color: #F5DEB3;
+  font-size: calc(10px + 1.5vmin);
+}
+
+.App-info-block {
+  border-right: 0.05em solid #F5DEB3;
+  height: 6em;
+}
+
+.App-info-value {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: -0.5em;
+}
+
+.App-join {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+  background-color: #F5DEB3;
+  padding: 2em;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.App-title {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#App-contacts, #App-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+}
+
+footer {
+  border-top: 0.05em solid #a1a1a1;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+  .App-header {
+    font-size: calc(10px + 1vmin);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .App-link {
+    margin-right: 0.5em;
+  }
+
+  .App-home-text {
+    font-size: calc(10px + 2.5vmin);
+    right: 0.2em;
+  }
+
+  .App-about-block {
+    display: block;
+  }
+
+  .App-about-photo {
+    display: none;
+  }
+
+  .App-review-container {
+    display: inline;
+  }
+
+  .App-review {
+    margin-top: 10px;
+  }
+
+  .App-interior-photo {
+    height: 15em;
+  }
+  
+  .App-info {
+    font-size: calc(10px + 1vmin);
+  }
+
+  .App-home-description {
+    font-size: calc(10px + 0.5vmin);
+    right: 1em;
+  }
+
+  .App-join {
+    padding: 1em;
+    font-size: calc(10px + 1vmin);
+  }
+
+  #App-contacts, #App-about, #App-services {
+    grid-column-gap: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media only screen and (min-width: 1382px) { 
+  .App-home-description {
+    font-size: calc(10px + 2vmin);
+  }
+  
+  #App-contacts, #App-about, #App-services {
+    font-size: x-large;
+    grid-column-gap: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
